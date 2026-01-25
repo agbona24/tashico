@@ -14,7 +14,7 @@ interface Course {
 
 interface Program {
   id: string;
-  icon: JSX.Element;
+  icon: React.ReactNode;
   title: string;
   subtitle: string;
   description: string;

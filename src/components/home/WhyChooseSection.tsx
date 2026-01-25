@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 import { AnimatedSection } from '@/lib/animations';
 
 interface Reason {
-  icon: JSX.Element;
+  icon: React.ReactNode;
   title: string;
   description: string;
 }

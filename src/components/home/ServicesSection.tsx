@@ -5,7 +5,7 @@ import Link from 'next/link';
 import { AnimatedSection, StaggerContainer, StaggerItem } from '@/lib/animations';
 
 interface Service {
-  icon: JSX.Element;
+  icon: React.ReactNode;
   title: string;
   description: string;
   features: string[];
