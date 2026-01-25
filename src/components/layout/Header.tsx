@@ -62,7 +62,7 @@ export default function Header() {
             <span className={`text-xs transition-colors duration-300 ${
               isScrolled ? 'text-[#4A4A4A]' : 'text-[#4A4A4A]'
             }`}>
-              Computer Institute
+              TECH & Resources
             </span>
           </div>
         </Link>

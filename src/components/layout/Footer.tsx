@@ -38,7 +38,7 @@ export default function Footer() {
               </div>
               <div className="flex flex-col">
                 <span className="font-bold text-lg text-white">TASHICO</span>
-                <span className="text-xs text-white/70">Computer Institute</span>
+                <span className="text-xs text-white/70">TECH & Resources</span>
               </div>
             </Link>
             <p className="text-white/70 text-sm leading-relaxed mb-6">

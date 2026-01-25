@@ -131,7 +131,7 @@ export default function AboutPageContent() {
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
                         </svg>
                       </div>
-                      <p className="text-lg font-medium">TASHICO Institute</p>
+                      <p className="text-lg font-medium">TASHICO TECH</p>
                       <p className="text-sm opacity-70">Est. 2010</p>
                     </div>
                   </div>
@@ -198,6 +198,93 @@ export default function AboutPageContent() {
                   >
                     Contact Us
                   </Link>
+                </div>
+              </AnimatedSection>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* CEO/Founder Section */}
+      <section className="py-20 lg:py-28 bg-[#F5F7F8]">
+        <div className="container-custom">
+          <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+            {/* CEO Image */}
+            <AnimatedSection>
+              <div className="relative max-w-md mx-auto lg:mx-0">
+                <div className="aspect-[3/4] rounded-2xl overflow-hidden shadow-2xl shadow-[#1F5F6A]/20">
+                  <img
+                    src="/ceo.jpeg"
+                    alt="Jimoh Ayinde M - CEO of TASHICO TECH"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                {/* Decorative Elements */}
+                <div className="absolute -bottom-4 -right-4 w-24 h-24 bg-[#F28C28]/20 rounded-full blur-2xl" />
+                <div className="absolute -top-4 -left-4 w-32 h-32 bg-[#1F5F6A]/10 rounded-full blur-2xl" />
+                {/* Quote Badge */}
+                <motion.div
+                  initial={{ opacity: 0, scale: 0.8 }}
+                  whileInView={{ opacity: 1, scale: 1 }}
+                  transition={{ delay: 0.3 }}
+                  className="absolute -bottom-6 -right-6 bg-white rounded-2xl shadow-xl p-4"
+                >
+                  <div className="flex items-center gap-3">
+                    <div className="w-10 h-10 bg-[#F28C28] rounded-full flex items-center justify-center">
+                      <svg className="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z" />
+                      </svg>
+                    </div>
+                    <div>
+                      <div className="text-sm font-bold text-[#0F4A55]">Founder & CEO</div>
+                      <div className="text-xs text-[#4A4A4A]">Since 2010</div>
+                    </div>
+                  </div>
+                </motion.div>
+              </div>
+            </AnimatedSection>
+
+            {/* CEO Content */}
+            <div>
+              <AnimatedSection>
+                <span className="inline-block px-4 py-1.5 bg-[#F28C28]/10 rounded-full text-[#F28C28] text-sm font-medium mb-4">
+                  Meet Our Founder
+                </span>
+                <h2 className="text-3xl md:text-4xl font-bold text-[#0F4A55] mb-2">
+                  Jimoh Ayinde M.
+                </h2>
+                <p className="text-lg text-[#F28C28] font-medium mb-6">
+                  Founder & Chief Executive Officer
+                </p>
+              </AnimatedSection>
+
+              <AnimatedSection delay={0.1}>
+                <p className="text-[#4A4A4A] mb-6 leading-relaxed">
+                  With a passion for technology education and community development, 
+                  Jimoh Ayinde M. founded TASHICO TECH and Resources Management in 2010 
+                  with a clear mission: to bridge the digital divide in Ijebu North and 
+                  empower individuals with practical IT skills.
+                </p>
+              </AnimatedSection>
+
+              <AnimatedSection delay={0.2}>
+                <p className="text-[#4A4A4A] mb-8 leading-relaxed">
+                  Under his visionary leadership, TASHICO has grown from a small training 
+                  center to a comprehensive technology institution, training over 3,000 
+                  graduates and producing 400+ IT professionals who now work across Nigeria 
+                  and globally. His commitment to quality education and hands-on training 
+                  continues to transform lives and careers.
+                </p>
+              </AnimatedSection>
+
+              <AnimatedSection delay={0.3}>
+                <div className="bg-white rounded-2xl p-6 border-l-4 border-[#F28C28]">
+                  <p className="text-[#4A4A4A] italic mb-4">
+                    &ldquo;Technology is the great equalizer. Our mission is to ensure that 
+                    everyone, regardless of background, has access to quality IT education 
+                    that can transform their future.&rdquo;
+                  </p>
+                  <p className="text-[#0F4A55] font-semibold">— Jimoh Ayinde M.</p>
                 </div>
               </AnimatedSection>
             </div>
