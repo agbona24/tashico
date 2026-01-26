@@ -1,6 +1,7 @@
 'use client';
 
 import Link from 'next/link';
+import Image from 'next/image';
 import { motion } from 'framer-motion';
 
 const quickLinks = [
@@ -31,10 +32,13 @@ export default function Footer() {
           <div className="lg:col-span-1">
             <Link href="/" className="inline-flex items-center gap-3 mb-6">
               <div className="relative">
-                <div className="w-12 h-12 bg-white/10 backdrop-blur rounded-xl flex items-center justify-center">
-                  <span className="text-white font-bold text-xl">T</span>
-                </div>
-                <div className="absolute -bottom-1 -right-1 w-3 h-3 bg-[#F28C28] rounded-full" />
+                <Image
+                  src="/logot.png"
+                  alt="TASHICO Logo"
+                  width={48}
+                  height={48}
+                  className="rounded-xl"
+                />
               </div>
               <div className="flex flex-col">
                 <span className="font-bold text-lg text-white">TASHICO</span>

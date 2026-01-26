@@ -1,6 +1,6 @@
 'use client';
 
-import { motion } from 'framer-motion';
+import { color, motion } from 'framer-motion';
 import Link from 'next/link';
 import { AnimatedSection } from '@/lib/animations';
 

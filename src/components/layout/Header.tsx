@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { usePathname } from 'next/navigation';
 import { motion, AnimatePresence } from 'framer-motion';
 
@@ -39,19 +40,21 @@ export default function Header() {
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         isScrolled
           ? 'bg-white/95 backdrop-blur-md shadow-lg py-3'
-          : 'bg-transparent py-5'
+          : 'bg-white/95 backdrop-blur-md shadow-sm py-4'
       }`}
     >
       <nav className="container-custom flex items-center justify-between">
         {/* Logo */}
         <Link href="/" className="flex items-center gap-3 group">
           <div className="relative">
-            {/* Logo Mark */}
-            <div className="w-12 h-12 bg-gradient-to-br from-[#1F5F6A] to-[#0F4A55] rounded-xl flex items-center justify-center transform group-hover:scale-105 transition-transform duration-300">
-              <span className="text-white font-bold text-xl">T</span>
-            </div>
-            {/* Accent dot */}
-            <div className="absolute -bottom-1 -right-1 w-3 h-3 bg-[#F28C28] rounded-full" />
+            {/* Logo Image */}
+            <Image
+              src="/logot.png"
+              alt="TASHICO Logo"
+              width={48}
+              height={48}
+              className="transform group-hover:scale-105 transition-transform duration-300"
+            />
           </div>
           <div className="flex flex-col">
             <span className={`font-bold text-lg leading-tight transition-colors duration-300 ${

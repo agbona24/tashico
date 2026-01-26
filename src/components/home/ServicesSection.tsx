@@ -70,7 +70,7 @@ export default function ServicesSection() {
       <div className="container-custom">
         {/* Section Header */}
         <AnimatedSection className="text-center mb-16">
-          <span className="inline-block px-4 py-1.5 bg-[#F28C28]/10 rounded-full text-[#F28C28] text-sm font-medium mb-4">
+          <span className="inline-block px-4 py-1.5 bg-gradient-to-r from-[#F28C28] to-[#e07b1a] rounded-full text-white text-sm font-medium mb-4 shadow-sm shadow-[#F28C28]/30">
             What We Offer
           </span>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#0F4A55] mb-4">

@@ -91,22 +91,31 @@ export default function ContactPageContent() {
   return (
     <>
       {/* Hero Section */}
-      <section className="relative pt-32 pb-20 lg:pt-40 lg:pb-28 bg-gradient-to-br from-[#F5F7F8] via-white to-[#F5F7F8] overflow-hidden">
+      <section className="relative pt-32 pb-20 lg:pt-40 lg:pb-28 overflow-hidden" style={{ background: 'linear-gradient(135deg, #0F4A55 0%, #1F5F6A 25%, #0F4A55 50%, #1a3a40 100%)' }}>
         <div className="absolute inset-0 pointer-events-none">
-          <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-gradient-to-bl from-[#1F5F6A]/10 to-transparent rounded-full blur-3xl" />
-          <div className="absolute bottom-0 left-0 w-[400px] h-[400px] bg-gradient-to-tr from-[#F28C28]/10 to-transparent rounded-full blur-3xl" />
+          <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-gradient-to-bl from-[#F28C28]/20 to-transparent rounded-full blur-3xl" />
+          <div className="absolute bottom-0 left-0 w-[400px] h-[400px] bg-gradient-to-tr from-[#1F5F6A]/30 to-transparent rounded-full blur-3xl" />
         </div>
 
         <div className="container-custom relative z-10">
           <div className="max-w-4xl mx-auto text-center">
             <AnimatedSection>
-              <span className="inline-block px-4 py-1.5 bg-[#F28C28]/10 rounded-full text-[#F28C28] text-sm font-medium mb-6">
-                Contact Us
-              </span>
+              <div className="inline-flex items-center gap-3 px-5 py-2.5 bg-gradient-to-r from-[#1F5F6A] to-[#0F4A55] backdrop-blur-md rounded-full border border-[#1F5F6A]/30 mb-8 shadow-lg shadow-[#1F5F6A]/20">
+                <span className="relative flex h-3 w-3">
+                  <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#F28C28] opacity-75"></span>
+                  <span className="relative inline-flex rounded-full h-3 w-3 bg-[#F28C28]"></span>
+                </span>
+                <span className="text-sm font-medium text-white">
+                  Contact Us
+                </span>
+                <span className="px-3 py-1 bg-[#F28C28] text-white text-xs font-bold rounded-full shadow-sm shadow-[#F28C28]/30">
+                  Get in Touch
+                </span>
+              </div>
             </AnimatedSection>
             
             <AnimatedSection delay={0.1}>
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-[#0F4A55] mb-6 leading-tight">
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
                 Let&apos;s Start Your{' '}
                 <span className="text-[#F28C28]">
                   Journey
@@ -115,7 +124,7 @@ export default function ContactPageContent() {
             </AnimatedSection>
 
             <AnimatedSection delay={0.2}>
-              <p className="text-lg lg:text-xl text-[#4A4A4A] leading-relaxed max-w-3xl mx-auto">
+              <p className="text-lg lg:text-xl text-white/80 leading-relaxed max-w-3xl mx-auto">
                 Have questions about our programs or services? We&apos;re here to help. 
                 Reach out to us and our team will respond promptly.
               </p>
