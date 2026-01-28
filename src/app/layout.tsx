@@ -51,6 +51,11 @@ export const metadata: Metadata = {
     index: true,
     follow: true,
   },
+  icons: {
+    icon: "/logot.png",
+    shortcut: "/logot.png",
+    apple: "/logot.png",
+  },
 };
 
 export default function RootLayout({
